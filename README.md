@@ -1,4 +1,5 @@
-
+The Project
+---------------------------------------------------------------------------------------------------------------------------
 Write a Python program that will display a message to ask the user to input the type of residency.
 The program then reads the residency (‘I’ for in-state, ‘O’ for out-of-state, and ‘G’ for graduate).
 Based on the residency, the program will use the respective current tuition and respective word of
@@ -11,11 +12,13 @@ decimal places for amounts.
 Your program should have only one print( ) statement to produce all the five non-heading lines. This
 is the whole purpose of a loop. Also, the word UNDERGRADUATE in the headings should be replaced by GRADUATE
 when a ‘G’ is selected.
---------------------------------------------------------------------------------------------------------------------------
+
 Problem Definition
+--------------------------------------------------------------------------------------------------------------------------
 At a certain college, the current tuition is as follows: RESIDENCY ANNUAL TUITION In-state undergraduate student’s tuition equals $10,000 per year. Out-of-state undergraduate student’s tuition equals $24,000 per year. Professional graduate student’s tuition equals $40,000 per year.  The tuition will be increased by 3% (0.03) every year for the next 5 years. Write a Python program that will display a message to ask the user to input the type of residency. The program then reads the residency (‘I’ for in-state, ‘O’ for out-of-state, and ‘G’ for graduate). Based on the residency, the program will use the respective current tuition and respective word of either UNDERGRADUATE or GRADUATE … this needs an if … elif … else …. The program will then enter a loop and calculate the new tuition for every year for five years and inside the loop display a line of the table that will look as below, formatting output amounts to 2 decimal places for amounts. 
 
 Analysis
+--------------------------------------------------------------------------------------------------------------------------
 We have picked Python as our language for this project because we are currently learning the programming language in class...I decided to start the program right away in a while loop. I did this statement because I wanted the loop to continue if the user accidentally entered a number or letter that was not assigned in the program. I set an error message for this scenario so that the program would not exit on the user. It will print an error message of “Invalid Input. Please try again.” And reset to the beginning of the loop until correct input is entered.
 
 In the program, tuition is set till none while inside the loop until the input function asking what residency worked for you. After input, it will assign the input that the user picked as a variable. The program will go into an If-elif-else and state if tuition is equaled to “I”..  That inState equals to 10,000. Afterwards, tuition is equaled to inState. The last part is a print statement outputting “Undergraduate tuition for the next five years”. Running a elif, only if tuition is equaled to “0”. It will state that outOfState is equaled to 24,000. Afterwards, tuition is equaled to outOfState. The last part is a print statement outputting “Undergraduate tuition for the next five years”.
@@ -29,6 +32,7 @@ The next few paragraphs are the main functions of the program. It is where the v
 Finally, the ending of the visual output that the user will see when the program outputs it. The program will format “Total Tuition Increase” and the variable finalTuitionIncrease 20 character places (float) to align with increase. This variable will also be placed two decimal points with a “,” for its final number that is printed to the screen.
 
 Design
+--------------------------------------------------------------------------------------------------------------------------
 Here is thePseudocode:
 •	Tuition is equaled to none until assigned
 •	Input “‘I’ for in-state, ‘O’ for out-of-state, and ‘G’ for graduate
@@ -70,4 +74,5 @@ Here is thePseudocode:
 •	
 
 Implementation
+--------------------------------------------------------------------------------------------------------------------------
 The development environment used for this program was PyCharm CE. I programmed it on my Mac pro using the OS Operating System. I had a couple unusual situations happen while developing this program. I ran into a problem with the For loop. I could print the tuition an Increase that was wanted. However, the Academic Years loop was quite the problem. Getting the -17, -18..etc was the issue. I had to set a base counting loop to control it. After hours of pulling my hair out…I Finally got the right output and celebrated until I tried to improve it and yet another syntax error…BUT ERRORS ARE MY FRIENDS and the HELP!
